@@ -8,7 +8,7 @@ fullnameOverride: ""
 images:
   owgwui:
     repository: tip-tip-wlan-cloud-ucentral.jfrog.io/owgw-ui
-    tag: main
+    tag: v2.7.0
     pullPolicy: Always
 
 services:
@@ -75,4 +75,5 @@ podAnnotations: {}
 
 # Application
 public_env_variables:
-  REACT_APP_UCENTRALSEC_URL: https://ucentral.dpaas.arilia.com:16001
+  DEFAULT_UCENTRALSEC_URL: https://ucentral.dpaas.arilia.com:16001
+  ALLOW_UCENTRALSEC_CHANGE: false
